@@ -40,7 +40,7 @@ function App() {
      <br></br>
      <br></br>
      <Recaptcha
-    sitekey="6LdUadwUAAAAAPPaHThKNNVtwNz9kwSf7Jc57aY4"
+    sitekey="XXXXXXXXXXXXXXXXXXXXXXX"
     render="explicit"
     verifyCallback={verifyCallback}
     onloadCallback={recaptchaLoaded}
