@@ -6,9 +6,6 @@ import './App.css'
 function App() {
  
   const [isVerified, setisVerified] = useState(false)
-  const [Email, setEmail] = useState("")
-
-  
   const handlethis=()=>
   {
     if(isVerified)
@@ -35,7 +32,7 @@ function App() {
   return (
     <div className="Box">
       <h2>Verify Captcha</h2>
-     <input refs="email" type="email" value={Email} onChange={e=>setEmail(e.target.value)} placeholder="Your Email ID"></input>
+     <input type="email" required placeholder="Your Email ID"></input>
      <button className="waves-effect waves-light btn"onClick={handlethis}>SUBSCRIBE</button>
      <br></br>
      <br></br>

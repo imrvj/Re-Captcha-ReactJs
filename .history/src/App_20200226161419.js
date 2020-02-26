@@ -2,13 +2,9 @@ import React, { useState } from 'react';
 import Recaptcha  from 'react-recaptcha'
 import './App.css'
 
-
 function App() {
- 
-  const [isVerified, setisVerified] = useState(false)
-  const [Email, setEmail] = useState("")
 
-  
+  const [isVerified, setisVerified] = useState(false)
   const handlethis=()=>
   {
     if(isVerified)
@@ -35,9 +31,8 @@ function App() {
   return (
     <div className="Box">
       <h2>Verify Captcha</h2>
-     <input refs="email" type="email" value={Email} onChange={e=>setEmail(e.target.value)} placeholder="Your Email ID"></input>
-     <button className="waves-effect waves-light btn"onClick={handlethis}>SUBSCRIBE</button>
-     <br></br>
+     <input type="text" placeholder="your email"></input>
+     <button className="waves-effect waves-light btn"onClick={handlethis}>SUBSCIBE</button>
      <br></br>
      <Recaptcha
     sitekey="6LdUadwUAAAAAPPaHThKNNVtwNz9kwSf7Jc57aY4"
